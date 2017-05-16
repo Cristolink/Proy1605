@@ -13,5 +13,14 @@
          <?php
          echo md5('Hola Mundo');
          ?>
+          
+          <form>
+              Stando Masteru
+              <input type="text" name="nombre"><br>
+              Stando passwordu
+              <input type="password" name="clave">
+              
+              
+          </form>
     </body>
 </html>
