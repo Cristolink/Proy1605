@@ -9,9 +9,9 @@ include $PATH.'Usuario.php';
 
 $oUsr=new Usuario();
 
-$oUsr->nombre='nuevo';
-
-if($oUsr->VerificaUsuario())
+$oUsr->nombre='flopez';
+$oUsr->clave='1234';
+if($oUsr->VerificaUsuarioClave())
     echo "Existe";
 else
     echo "No Existe";

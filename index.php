@@ -10,5 +10,8 @@
     </head>
     <body>
           <a href="revision.php">Revisi&oacute;n sesi&oacute;n</a>
+         <?php
+         echo md5('Hola Mundo');
+         ?>
     </body>
 </html>
