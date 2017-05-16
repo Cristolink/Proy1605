@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<?php
-$_SESSION["saludo"]="Hola Mundo";
-?>
+
+   /* <?php
+$_SESSION["saludo"]="Hola Mundo"; ?>
+*/
 <html>
     <head>
         <meta charset="UTF-8">
