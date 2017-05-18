@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- /*$_SESSION["saludo"]="Hola Mundo"; */
+session_start();
 
 ?>
 <html>
@@ -10,17 +10,13 @@
     </head>
     <body>
           <a href="revision.php">Revisi&oacute;n sesi&oacute;n</a>
-         <?php
-         echo md5('Hola Mundo');
-         ?>
-          
-          <form>
-              Stando Masteru
-              <input type="text" name="nombre"><br>
-              Stando passwordu
-              <input type="password" name="clave">
-              
-              
+     
+          <?php if (isset($_SESSION['USR'])){ ?>
+          <form action="revision.php" method="POST">
+              <input type="text" name="nombre"/>
+              <input type="paswword" name="clave"/>
+              <input type="submit" value="Acceder">
           </form>
+          <?php }?>
     </body>
 </html>
