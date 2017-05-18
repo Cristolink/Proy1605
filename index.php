@@ -9,9 +9,15 @@ session_start();
         <title></title>
     </head>
     <body>
+        <div>
+            <?php if(isset($_SESSION['USR'])) { ?>
+            <A href="cerrar.php">Cerrar Sesión</a>
+            <?php } ?>
+        </div>
+        
           <a href="revision.php">Revisi&oacute;n sesi&oacute;n</a>
      
-          <?php if (isset($_SESSION['USR'])){ ?>
+          <?php if (!isset($_SESSION['USR'])){ ?>
           <form action="revision.php" method="POST">
               <input type="text" name="nombre"/>
               <input type="paswword" name="clave"/>
