@@ -12,7 +12,8 @@ session_start();
         <div>
             <?php if(isset($_SESSION['USR'])) { ?>
             <A href="cerrar.php">Cerrar Sesión</a>
-            <?php } ?>
+            <?php }
+            ?>
         </div>
         
           <a href="revision.php">Revisi&oacute;n sesi&oacute;n</a>
